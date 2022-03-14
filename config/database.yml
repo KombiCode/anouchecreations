@@ -84,3 +84,9 @@ production:
   database: anouchecreations_production
   username: anouchecreations
   password: <%= ENV["ANOUCHECREATIONS_DATABASE_PASSWORD"] %>
+
+staging:
+  <<: *default
+  database: anouchecreations_staging
+  username: anouchecreations
+  password: <%= ENV["ANOUCHECREATIONS_DATABASE_PASSWORD"] %>
