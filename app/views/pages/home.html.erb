@@ -1,5 +1,8 @@
 <div class="container px-4 mx-auto my-8">
   <div class="shadow-xl rounded-xl">
+      <% if Rails.env == 'staging'%>
+        <p class="mt-2 text-sm font-thin leading-snug">(<%= Rails.env %>)</p>
+      <% end %>
       <div class="flex flex-col p-7">
         <p class="mt-4 text-2xl text-center text-gray-500 truncate hover:text-pink-400">Bienvenue !</p>
       </div>
