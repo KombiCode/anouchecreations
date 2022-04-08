@@ -1,11 +1,8 @@
 <div class="container px-4 mx-auto my-8">
-  <div class="shadow-xl rounded-xl">
-      <% if Rails.env == 'staging'%>
-        <p class="mt-2 text-sm font-thin leading-snug">(<%= Rails.env %>)</p>
-      <% end %>
-      <div class="flex flex-col p-7">
-        <p class="mt-2 text-lg font-thin leading-snug text-brandGolden font-anouche">anouche création</p>
-        <%= image_tag("anouche-bijoux.gif", width: 531, height: 235) %>
-      </div>
+  <% if Rails.env == 'staging'%>
+    <p class="mt-2 text-sm font-thin leading-snug">(<%= Rails.env %>)</p>
+  <% end %>
+  <div class="flex justify-center mt-48">
+    <%= image_tag("anouche-bijoux.gif", width: 531, height: 235) %>
   </div>
 </div>
