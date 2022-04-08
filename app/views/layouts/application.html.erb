@@ -8,9 +8,28 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+
+    <!-- Preload for font -->
+    <link
+      rel="preload"
+      href=<%= asset_path "Spartan-VariableFont_wght.woff2" %>
+      as="font"
+      type="font/woff2"
+      crossOrigin="anonymous"
+    />  
+
+    <style>
+      #menu-toggle:checked + #menu {
+        display: block;
+      }
+    </style>
   </head>
 
-  <body>
-    <%= yield %>
+  <body class="h-full antialiased font-normal leading-normal bg-gray-50">
+    <main>
+      <%= render "shared/navbar" %>
+      <%= yield %>
+    </main>
   </body>
+
 </html>
