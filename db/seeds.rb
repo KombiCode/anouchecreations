@@ -5,3 +5,17 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+puts "Cleaning database"
+Category.destroy_all
+
+puts "Add categories"
+Category.create(name: "Tout")
+Category.create(name: "Sautoirs")
+Category.create(name: "Colliers")
+Category.create(name: "Boucles d'oreilles")
+Category.create(name: "Bracelets")
+Category.create(name: "Personnalisation")
+
+puts "#{Category.count} categories have been created"
+puts "Database ready"
