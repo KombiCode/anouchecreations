@@ -7,7 +7,7 @@
 }
 
 /* Override font for whole dialog */
-#CybotCookiebotDialog { font-family: Jost!important; }
+#CybotCookiebotDialog { font-family: Spartan!important; }
 
 /* Remove Cookiebot CMP branding from widget */
 #CookiebotWidget-widgetContent > div >
@@ -22,7 +22,7 @@ a#CybotCookiebotDialogPoweredbyCybot,div#CybotCookiebotDialogPoweredByText {
 }
 
 /* Override font for whole dialog */
-#CookiebotWidget { font-family: Jost!important; }
+#CookiebotWidget { font-family: Spartan!important; }
 
 /* Override consent details */
 .CookiebotWidget-consent-details > button {
