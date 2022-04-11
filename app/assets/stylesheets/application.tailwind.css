@@ -1,6 +1,7 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import './components/base.css';
+@import './third-parties/cookiebot.css';
 @import "tailwindcss/utilities";
 
 /* Spartan variable font */
