@@ -9,9 +9,12 @@
         <%= render_svg 'anouche-instagram', styles: "fill-current h-8 w-8 text-gray-600 hover:text-gray-700" %>
       </a>
     </div>
-    <!-- Copyright -->
+    <!-- Logo and copyright -->
     <div class="flex items-center justify-center">
-      <div class="ml-4 text-gray-700">© <%= Date.current.year %> anouche création</div>
+      <%= link_to root_path, class: "p-0 hidden sm:flex sm:justify-around" do %>
+        <%= render_svg 'anouche-banner-logo', size: "25%" %>
+      <% end %>
+      <div class="text-gray-700">© <%= Date.current.year %> anouche création</div>
     </div>
   </div>
 </div>
