@@ -13,5 +13,20 @@
   src: url('Spartan-VariableFont_wght.woff2') format("woff2");
 }
 
+/* Inspiration handwritten font */
+@font-face {
+  font-family: 'Inspiration';
+  src: url('Inspiration-Regular.ttf');
+}
 
+/* LoaftyGoals handwritten font */
+@font-face {
+  font-family: 'LoftyGoals';
+  src: url('LoftyGoals.otf');
+}
 
+/* ComforterBrush handwritten font */
+@font-face {
+  font-family: 'ComforterBrush';
+  src: url('ComforterBrush-Regular.woff2');
+}
