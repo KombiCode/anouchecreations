@@ -13,7 +13,11 @@ module.exports = {
         brandActive: "#b39d24"
       },
       fontFamily: {
-        anouche: ["Spartan", "sans-serif"]
+        anouche: ["Spartan", "sans-serif"],
+        anoucheHand1: ["Inspiration", "sans-serif"],
+        anoucheHand2: ["LoftyGoals", "sans-serif"],
+        anoucheHand3: ["ComforterBrush", "sans-serif"],
+        anoucheHand: ["ComforterBrush", "sans-serif"]
       }
     },
   }
