@@ -1,3 +1,16 @@
+GIT
+  remote: https://github.com/stimulusreflex/cable_ready.git
+  revision: ebc9c3d60fe00963ab8bed44515521ac94b1861a
+  specs:
+    cable_ready (5.0.0.pre9)
+      actioncable (>= 5.2)
+      actionpack (>= 5.2)
+      actionview (>= 5.2)
+      activerecord (>= 5.2)
+      activesupport (>= 5.2)
+      railties (>= 5.2)
+      thread-local (>= 1.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -68,6 +81,7 @@ GEM
       tzinfo (~> 2.0)
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
+    bcrypt (3.1.17)
     bindex (0.8.1)
     bootsnap (1.11.1)
       msgpack (~> 1.2)
@@ -91,6 +105,12 @@ GEM
       reline (>= 0.2.7)
     digest (3.1.0)
     erubi (1.10.0)
+    faraday (2.2.0)
+      faraday-net_http (~> 2.0)
+      ruby2_keywords (>= 0.0.4)
+    faraday-net_http (2.0.1)
+    friendly_id (5.4.2)
+      activerecord (>= 4.0.0)
     globalid (1.0.0)
       activesupport (>= 5.0)
     i18n (1.10.0)
@@ -107,6 +127,7 @@ GEM
       activesupport (>= 5.0.0)
     jsbundling-rails (1.0.2)
       railties (>= 6.0.0)
+    jwt (2.3.0)
     loofah (2.14.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -118,6 +139,8 @@ GEM
     mini_mime (1.1.2)
     minitest (5.15.0)
     msgpack (1.4.5)
+    multi_json (1.15.0)
+    multi_xml (0.6.0)
     net-imap (0.2.3)
       digest
       net-protocol
@@ -138,6 +161,13 @@ GEM
       racc (~> 1.4)
     nokogiri (1.13.3-x86_64-linux)
       racc (~> 1.4)
+    oauth (0.5.8)
+    oauth2 (1.4.9)
+      faraday (>= 0.17.3, < 3.0)
+      jwt (>= 1.0, < 3.0)
+      multi_json (~> 1.3)
+      multi_xml (~> 0.5)
+      rack (>= 1.2, < 3)
     pg (1.3.4)
     public_suffix (4.0.6)
     puma (5.6.2)
@@ -178,11 +208,16 @@ GEM
     reline (0.3.1)
       io-console (~> 0.5)
     rexml (3.2.5)
+    ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
     selenium-webdriver (4.1.0)
       childprocess (>= 0.5, < 5.0)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2)
+    sorcery (0.16.3)
+      bcrypt (~> 3.1)
+      oauth (~> 0.5, >= 0.5.5)
+      oauth2 (~> 1.0, >= 0.8.0)
     sprockets (4.0.3)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
@@ -192,14 +227,20 @@ GEM
       sprockets (>= 3.0.0)
     stimulus-rails (1.0.4)
       railties (>= 6.0.0)
+    strong_migrations (0.7.9)
+      activerecord (>= 5)
     strscan (3.0.1)
     thor (1.2.1)
+    thread-local (1.1.0)
     timeout (0.2.0)
     turbo-rails (1.0.1)
       actionpack (>= 6.0.0)
       railties (>= 6.0.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
+    view_component (2.57.1)
+      activesupport (>= 5.0.0, < 8.0)
+      method_source (~> 1.0)
     web-console (4.2.0)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -222,9 +263,11 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap
+  cable_ready!
   capybara
   cssbundling-rails
   debug
+  friendly_id (~> 5.4.0)
   inline_svg
   jbuilder
   jsbundling-rails
@@ -233,10 +276,13 @@ DEPENDENCIES
   rails (~> 7.0.2, >= 7.0.2.3)
   redis (~> 4.0)
   selenium-webdriver
+  sorcery
   sprockets-rails
   stimulus-rails
+  strong_migrations (~> 0.7.6)
   turbo-rails
   tzinfo-data
+  view_component
   web-console
   webdrivers
 
