@@ -76,3 +76,15 @@ end
 
 # Inline SVG
 gem 'inline_svg'
+
+# Sorcey for User authentication
+gem 'sorcery'
+# Friendly ID
+gem 'friendly_id', '~> 5.4.0'
+
+gem 'strong_migrations', '~> 0.7.6'
+
+gem "cable_ready", github: "stimulusreflex/cable_ready" 
+
+# ViewComponent
+gem "view_component"
