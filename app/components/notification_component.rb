@@ -13,6 +13,7 @@ class NotificationComponent < ViewComponent::Base
 
     @data[:timeout] ||= 3
     @data[:action][:method] ||= "get" if @data[:action]
+    @data[:refresh] ||= false
   end
 
   private

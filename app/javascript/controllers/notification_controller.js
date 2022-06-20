@@ -5,6 +5,7 @@ export default class extends Controller {
 
   connect() {
     const timeoutSeconds = parseInt(this.data.get("timeout"));
+    const refresh = this.data.get("refresh");
 
     setTimeout(() => {
       this.element.classList.remove('hidden');
@@ -23,6 +24,9 @@ export default class extends Controller {
     }, 500);
     this.timeoutId = setTimeout(() => {
       this.close();
+      if (refresh) {
+        location.reload()
+      }
     }, timeoutSeconds * 1000 + 500);
   }
 

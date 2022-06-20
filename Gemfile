@@ -82,6 +82,8 @@ gem 'sorcery'
 # Friendly ID
 gem 'friendly_id', '~> 5.4.0'
 
+gem 'strong_migrations'
+
 gem "cable_ready", github: "stimulusreflex/cable_ready" 
 
 # ViewComponent
