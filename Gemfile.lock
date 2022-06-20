@@ -227,8 +227,8 @@ GEM
       sprockets (>= 3.0.0)
     stimulus-rails (1.0.4)
       railties (>= 6.0.0)
-    strong_migrations (0.7.9)
-      activerecord (>= 5)
+    strong_migrations (1.2.0)
+      activerecord (>= 5.2)
     strscan (3.0.1)
     thor (1.2.1)
     thread-local (1.1.0)
@@ -279,7 +279,7 @@ DEPENDENCIES
   sorcery
   sprockets-rails
   stimulus-rails
-  strong_migrations
+  strong_migrations (~> 1.2.0)
   turbo-rails
   tzinfo-data
   view_component
