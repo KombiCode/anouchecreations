@@ -4,6 +4,7 @@
       <%= current_user.email %>
       <p>&nbsp;&nbsp;</p>
       <%= link_to "Déconnexion", logout_path,
+          id: "logout",
           class: "brandHover text-xl text-white inline-flex items-center px-0 md:px-4 py-0 leading-6 transition duration-150 ease-in-out bg-brandActive border border-transparent rounded-md hover:bg-white focus:outline-none focus:shadow-outline-brandActive" %>
     </div>
   </nav>
