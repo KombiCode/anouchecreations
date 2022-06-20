@@ -82,7 +82,7 @@ gem 'sorcery'
 # Friendly ID
 gem 'friendly_id', '~> 5.4.0'
 
-gem 'strong_migrations'
+gem 'strong_migrations', '~> 1.2.0'
 
 gem "cable_ready", github: "stimulusreflex/cable_ready" 
 
