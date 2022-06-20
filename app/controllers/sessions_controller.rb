@@ -12,9 +12,10 @@ class SessionsController < ApplicationController
     user = login(params[:email], params[:password])
     if user
       flash = {
-        title: "Logged in!",
+        title: "Connecté!",
         timeout: 3,
-        countdown: false
+        countdown: false,
+        refresh: true
       }
       html = render_to_string(partial: 'shared/flash_notice', locals: {flash_info: {success: flash}})
       render operations: cable_car
@@ -29,6 +30,6 @@ class SessionsController < ApplicationController
 
   def destroy
     logout
-    redirect_to root_url
+    redirect_to root_path
   end
 end

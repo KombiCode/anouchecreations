@@ -5,7 +5,7 @@
     <div data-controller="extended-modal">
       <span class="inline-flex rounded-md shadow-md">
         <span class="inline-flex rounded-md shadow-xs">
-          <%= link_to "Log In", login_path,
+          <%= link_to "Connexion", login_path,
               data: { action: "click->extended-modal#open", remote: true },
               class: "brandHover text-xl text-white inline-flex items-center px-4 py-0 leading-6 transition duration-150 ease-in-out bg-brandActive border border-transparent rounded-md hover:bg-white focus:outline-none" %>
           <%= render 'sessions/modal' %>
