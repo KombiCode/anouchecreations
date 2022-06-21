@@ -48,7 +48,11 @@
     </style>
   </head>
 
+  <% if current_page?('/') %>
+  <body class="h-full antialiased font-normal leading-normal bg-white xl:w-full xl:bg-left-bottom xl:bg-no-repeat xl:bg-cover xl:bg-pebble">
+  <% else %>
   <body class="h-full antialiased font-normal leading-normal bg-white">
+  <% end %>
     <main>
       <%= render "shared/navbar" %>
       <%= render "shared/admin_session" %>
