@@ -118,6 +118,8 @@ GEM
     inline_svg (1.8.0)
       activesupport (>= 3.0)
       nokogiri (>= 1.6)
+    invisible_captcha (2.0.0)
+      rails (>= 5.0)
     io-console (0.5.11)
     io-wait (0.2.1)
     irb (1.4.1)
@@ -269,6 +271,7 @@ DEPENDENCIES
   debug
   friendly_id (~> 5.4.0)
   inline_svg
+  invisible_captcha
   jbuilder
   jsbundling-rails
   pg (~> 1.1)

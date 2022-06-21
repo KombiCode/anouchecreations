@@ -11,6 +11,14 @@ module Anouchecreations
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
 
+    config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '*.{rb,yml}')]
+    config.i18n.available_locales = [:en, :fr]
+    config.i18n.default_locale = :fr
+
+    config.active_model.i18n_customize_full_message = true
+
+    config.action_mailer.asset_host = ENV['DOMAIN_FOR_CONTACTS_EMAIL']
+
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files
