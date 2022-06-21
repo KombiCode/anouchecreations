@@ -20,6 +20,9 @@ module.exports = {
         anoucheHand2: ["LoftyGoals", "sans-serif"],
         anoucheHand3: ["ComforterBrush", "sans-serif"],
         anoucheHand: ["ComforterBrush", "sans-serif"]
+      },
+      backgroundImage: {
+        'pebble': "url('anouche-background-pebble.svg')"
       }
     },
   }

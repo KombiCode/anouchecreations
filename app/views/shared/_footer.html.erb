@@ -1,4 +1,8 @@
+<% if current_page?('/') %>
+<div class="px-2 text-sm font-light text-gray-500 2xl:text-white footer lg:px-16 font-anouche">
+<% else %>
 <div class="px-2 text-sm font-light text-gray-500 footer lg:px-16 font-anouche">
+<% end %>
     <!-- Social media icons links -->
     <div class="flex flex-wrap items-center justify-center space-x-4" >
       <a href="https://www.facebook.com/Anouche-cr%C3%A9ation-286875178416529">
@@ -8,19 +12,23 @@
         <%= render_svg 'anouche-instagram', styles: "fill-current h-8 w-8 text-gray-600 hover:text-gray-700" %>
       </a>
     </div>
-  <div class="flex flex-col-reverse p-4 text-sm lg:flex-row lg:justify-between lg:p-0">
+  <div class="flex flex-col-reverse p-4 text-sm 2xl:flex-row 2xl:justify-between 2xl:p-0">
     <!-- Logo and copyright -->
     <div class="flex items-center justify-center">
       <%= link_to root_path, class: "hidden sm:inline-block" do %>
         <%= render_svg 'anouche-banner-logo', styles: "fill-current h-16 w-16 text-gray-600 hover:text-gray-700" %>
       <% end %>
+      <% if current_page?('/') %>
+      <div class="ml-4 text-black">© <%= Date.current.year %> anouche création</div>
+      <% else %>
       <div class="ml-4 text-gray-700">© <%= Date.current.year %> anouche création</div>
+      <% end %>
     </div>
     <!-- Mentions -->
     <div class="flex flex-wrap items-center justify-center">
-      <%= link_to "A propos", "#", class: "brandHover no-underline block px-4 lg:my-0 my-2" %>
-      <%= link_to "Confidentialité", "#", class: "brandHover no-underline block lg:my-0 my-2 px-4" %>
-      <%= link_to "Conditions d'utilisation", "#", class: "brandHover no-underline block lg:my-0 my-2 px-4" %>
+      <%= link_to "A propos", "#", class: "brandHover no-underline block px-4 2xl:my-0 my-2" %>
+      <%= link_to "Confidentialité", "#", class: "brandHover no-underline block 2xl:my-0 my-2 px-4" %>
+      <%= link_to "Conditions d'utilisation", "#", class: "brandHover no-underline block 2xl:my-0 my-2 px-4" %>
     </div>
   </div>
 </div>
