@@ -1,0 +1,30 @@
+fr:
+
+  contact_title: "Une question ?"
+  contact_fill: "Remplissez ce formulaire et je vous recontacterai dès que possible."
+  send_message: "Envoyer le message"
+
+  message_sent: "Votre message a bien été envoyé."
+
+  activerecord:
+    models:
+      contact: 'Contact'
+      message: 'Message'
+    attributes:
+      contact:
+        name: 'Nom'
+        email: 'Email'
+        phone: 'Numéro de téléphone'
+    errors:
+      models:
+        contact:
+          attributes:
+            name:
+              format: "Le nom %{message}"
+              blank: 'doit être renseigné'
+            email:
+              format: "L'email %{message}"
+              blank: 'doit être renseigné'
+            messages:
+              format: "Veuillez %{message}"
+              blank: 'indiquer votre message'

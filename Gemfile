@@ -88,3 +88,5 @@ gem "cable_ready", github: "stimulusreflex/cable_ready"
 
 # ViewComponent
 gem "view_component"
+
+gem 'invisible_captcha'

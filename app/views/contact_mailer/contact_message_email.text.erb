@@ -1,0 +1,6 @@
+Voici le nouveau message issu de '<%= ENV['DOMAIN_FOR_CONTACTS_EMAIL'] %>'
+<%= @contact.messages.first.body %>
+Coordonnées du contact:
+<%= @contact.name %>
+<%= @contact.phone %>
+<%= @contact.email %>
